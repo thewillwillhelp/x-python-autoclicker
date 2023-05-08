@@ -9,5 +9,7 @@ python-wrapper.o: python-wrapper.cpp python-wrapper.hpp
 
 xclicker: main.cpp clicker-lib.o python-wrapper.o
 	g++ -Wall $^ -o $@ -lX11 -lpython3.6m
+# For python 3.10:
+#	g++ -Wall $^ -o $@ -lX11 -lpython3.10
 
 
